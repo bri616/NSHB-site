@@ -60,13 +60,12 @@ a:link, a:visited {
 
 
 .login-box {
+  visibility: hidden;
   float: right;
   display: inline-block;
-  margin: 10px;
   padding: 10px;
   font-family: 'Merriweather Sans', sans-serif;
 }
-
 
 // content styling here
 
