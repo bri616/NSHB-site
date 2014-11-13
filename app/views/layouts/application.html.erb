@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NSHB</title>
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application' %>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="header">
+    <div class="row">
+    <div class="col-xs-0">
+    </div>
+    <div class="col-xs-12">
+    <div class="login-box">
+      <div class="login-form">
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label for="InputUserName">Username: </label>
+            <div class="input-group">
+              <input type="email" class="form-control input-sm" id="InputUserName" placeholder="Enter username">
+            </div>
+          </div>
+          <label class="sr-only" for="InputPassword">Password</label>
+          <div class="input-group">
+            <input type="password" class="form-control input-sm" id="InputPassword" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default btn-sm">Sign in</button>
+        </form>
+      </div><!-- /login-form -->
+    </div><!-- /login-box -->
+    </div><!-- /col -->
+    </div><!-- /row -->
+    <div class="row">
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-3">
+    <div class="brand">
+      <a href="/"><h1><strong>NSHB</strong>club</h1></a>
+    </div><!-- /brand -->
+    </div><!-- /col -->
+    <div class="col-xs-8">
+    <div class="nav">
+      <ul class="horizontal-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Events</a></li>
+        <% unless @current_user %><li><a href="#">Join</a></li><% end %>
+      </ul>
+    </div><!-- /nav -->
+    </div><!-- /col -->
+    </div><!-- /row -->
+  </div><!-- /header -->
+<div class="content-container">
+  <%= yield %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+.product-container {
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid #29829d;
+  width: 28%;
+  margin: 20px;
+  height: auto;
+  vertical-align: top;
+  position: relative;
+  line-spacing: normal;
+}
+
+.product-container > .product-name {
+  text-align: center;
+  padding: 10px;
+  font-size: 20pt;
+  font-family: sans-serif;
+}
+
+.product-container > .product-name a:link{
+  color: #c24653;
+}
+
+.product-container > .product-merchant {
+  padding: 10px;
+}
+
+.product-container > .product-description {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.product-container > .product-price {
+  position: relative;
+  bottom: 0;
+}
