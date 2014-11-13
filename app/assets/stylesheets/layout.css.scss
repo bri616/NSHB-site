@@ -64,11 +64,9 @@ a:link, a:visited {
   display: inline-block;
   padding: 10px;
   font-family: 'Merriweather Sans', sans-serif;
+  opacity: 0;
 }
 
-.not-visible {
-  visibility: hidden;
-}
 
 // content styling here
 
