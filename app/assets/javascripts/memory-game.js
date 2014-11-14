@@ -1,7 +1,8 @@
 $(function() {
-  $(".stout").click(stoutClickHandler);
+  $(".card").click(stoutClickHandler);
 });
 
 function stoutClickHandler() {
-  $(this).attr("src","assets/memory-game/stout.jpg");
+  var theBeer = this.classList[1];
+  $(this).attr("src","assets/memory-game/"+ theBeer + ".jpg");
 }
