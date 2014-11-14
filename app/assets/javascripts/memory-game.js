@@ -1,7 +1,5 @@
 $(function() {
-  // if two cards are flipped, check to see if they are the same
   $(".card").click(stoutClickHandler);
-
 });
 
 function stoutClickHandler() {
