@@ -2,16 +2,16 @@
 
 
 body {
-  background: #df9542;
+  background: #1F172E;
   font-family: sans-serif;
-  color: #627021;
+  color: #849331;
 }
 
 .horizontal-list > li{
   padding: 20px;
   padding-bottom: 15px;
   font-family: sans-serif;
-  color: white;
+  color: #FF9900;
   display: inline-block;
   text-decoration: none;
 }
@@ -21,14 +21,14 @@ td {
 }
 
 a:link, a:visited {
-  color: #627021;
+  color: #FF9900;
   text-decoration: underline;
 }
 
 // header styling here
 
 .header a{
-  color: white;
+  color: #FF9900;
   text-decoration: none;
 }
 
@@ -38,8 +38,15 @@ a:link, a:visited {
   font-size: 45pt;
 }
 
+.brand > .logo{
+  background-image: url('hops.png');
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 150px;
+}
+
 .nav {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #FF9900;
   float: right;
 }
 
@@ -50,12 +57,12 @@ a:link, a:visited {
 }
 
 .nav a:link, .nav a:visited, .nav a:hover, .nav a:active {
-  color: white;
+  color: #FF9900;
   text-decoration: none;
 }
 
 .nav a:hover {
-  color: #627021;
+  color: #849331;
 }
 
 
